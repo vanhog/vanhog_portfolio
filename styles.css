@@ -6,3 +6,9 @@
   --font-source: 'Source Sans 3', sans-serif;
   --color-vh_old_white: #f5f0ea;
 }
+
+@layer components {
+  .keyword {
+    @apply text-gray-200 font-source font-bold text-[20rem] leading-80;
+  }
+}
