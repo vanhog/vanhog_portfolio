@@ -6,9 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./tw.css" />
   </head>
-  <body class="bg-vh_old_white">
-    <main class="p-0 m-0">
-      <section id="keywords" class="">
+  <body class="bg-vh_old_white font-source">
+    <main class="p-0 m-0 min-w-93.75 grid grid-cols-2">
+      <section id="keywords" class="flex flex-col justify-center items-start">
         <div class="keyword">JavaScript</div>
         <div class="keyword">Tailwind</div>
         <div class="keyword">HTML5</div>
@@ -16,7 +16,14 @@
         <div class="keyword">Python</div>
         <div class="keyword">GIS</div>
       </section>
-      <section id="viewcard"></section>
+      <section id="viewcard" class="flex flex-col justify-center items-end p-5">
+        <div class="flex flex-col justify-end h-full">
+          <div class="text-vh_gray_dark">Dieter H. Hoogestraat</div>
+        </div>
+        <div class="flex flex-col justify-start h-full">
+          <div class="text-vh_gray_light">Web Developer</div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

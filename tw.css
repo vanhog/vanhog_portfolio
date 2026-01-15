@@ -8,13 +8,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --spacing: 0.25rem;
-    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-source: 'Source Sans 3', sans-serif;
     --color-vh_old_white: #f5f0ea;
+    --color-vh_zinc: oklch(92% 0.004 286.32);
+    --color-vh_gray_light: oklch(44.6% 0.03 256.802);
+    --color-vh_gray_dark: oklch(27.8% 0.033 256.848);
   }
 }
 @layer base {
@@ -169,37 +171,132 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
+  .mt-45 {
+    margin-top: calc(var(--spacing) * 45);
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .table {
+    display: table;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .min-w-93 {
+    min-width: calc(var(--spacing) * 93);
+  }
+  .min-w-93\.75 {
+    min-width: calc(var(--spacing) * 93.75);
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
   .bg-vh_old_white {
     background-color: var(--color-vh_old_white);
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
-}
-@layer components {
-  .keyword {
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-16 {
+    padding: calc(var(--spacing) * 16);
+  }
+  .font-source {
     font-family: var(--font-source);
-    font-size: 20rem;
-    --tw-leading: calc(var(--spacing) * 80);
-    line-height: calc(var(--spacing) * 80);
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-gray-200);
+  }
+  .text-vh_gray_dark {
+    color: var(--color-vh_gray_dark);
+  }
+  .text-vh_gray_light {
+    color: var(--color-vh_gray_light);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
 }
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
+.keyword {
+  font-size: 1rem;
+  color: var(--color-vh_zinc);
+  font-weight: 900;
 }
-@property --tw-font-weight {
+body {
+  margin: 0;
+  padding: 0;
+}
+@media (orientation: landscape) {
+  .keyword {
+    font-size: clamp(1rem, calc(1rem + 15vh), 16rem);
+    line-height: clamp(0.5rem, calc(1rem + 12vh), 8rem);
+  }
+}
+@media (orientation: portrait) {
+  .keyword {
+    font-size: clamp(1rem, calc(1.5rem + 12vw), 112px);
+    line-height: clamp(0.5rem, calc(1rem + 12vw), 8rem);
+  }
+}
+@property --tw-border-style {
   syntax: "*";
   inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-leading: initial;
-      --tw-font-weight: initial;
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
     }
   }
 }

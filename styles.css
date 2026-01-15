@@ -5,10 +5,40 @@
 @theme {
   --font-source: 'Source Sans 3', sans-serif;
   --color-vh_old_white: #f5f0ea;
+  --color-vh_zinc: oklch(92% 0.004 286.32);
+  --color-vh_gray_light: oklch(44.6% 0.03 256.802);
+  --color-vh_gray_dark: oklch(27.8% 0.033 256.848);
 }
 
-@layer components {
-  .keyword {
+/* @layer components {
+  .keyword2 {
     @apply text-gray-200 font-source font-bold text-[20rem] leading-80;
+  }
+  .keyword {
+    @apply text-gray-200 font-source font-bold text-keyword p-0 leading-keyword;
+  }
+} */
+
+.keyword {
+  font-size: 1rem;
+  color: var(--color-vh_zinc);
+  font-weight: 900;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+@media (orientation: landscape) {
+  .keyword {
+    font-size: clamp(1rem, calc(1rem + 15vh), 16rem);
+    line-height: clamp(0.5rem, calc(1rem + 12vh), 8rem);
+  }
+}
+
+@media (orientation: portrait) {
+  .keyword {
+    font-size: clamp(1rem, calc(1.5rem + 12vw), 112px);
+    line-height: clamp(0.5rem, calc(1rem + 12vw), 8rem);
   }
 }
