@@ -19,6 +19,18 @@
   }
 } */
 
+@layer components {
+  .faqDetail {
+    @apply bg-vh_zinc pb-5;
+  }
+  .faqQuestion {
+    @apply pt-18 pb-5 px-12 font-bold text-right text-2xl bg-vh_zinc;
+  }
+  .faqAnswere {
+    @apply px-12 pt-4;
+  }
+}
+
 .keyword {
   font-size: 1rem;
   color: var(--color-vh_zinc);
