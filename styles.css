@@ -24,10 +24,10 @@
     @apply bg-vh_zinc pb-5;
   }
   .faqQuestion {
-    @apply pt-18 pb-5 px-12 font-bold text-right text-2xl bg-vh_zinc;
+    @apply pt-18 pb-5 px-12 font-light text-right text-2xl bg-vh_zinc text-vh_gray_light;
   }
   .faqAnswere {
-    @apply px-12 pt-4;
+    @apply px-12 pt-4 text-xl font-light text-vh_gray_dark;
   }
 }
 
