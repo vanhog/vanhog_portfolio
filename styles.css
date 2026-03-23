@@ -20,6 +20,10 @@
 } */
 
 @layer components {
+  h2 {
+    @apply text-4xl sm:text-6xl font-bold text-vh_gray_light py-6;
+  }
+
   .faqDetail {
     @apply bg-vh_zinc pb-5;
   }
@@ -44,7 +48,7 @@ body {
 @media (orientation: landscape) {
   .keyword {
     font-size: clamp(1rem, calc(1rem + 15vh), 16rem);
-    line-height: clamp(0.5rem, calc(1rem + 22vh), 12rem);
+    line-height: clamp(0.5rem, calc(1rem + 12vh), 12rem);
   }
 }
 

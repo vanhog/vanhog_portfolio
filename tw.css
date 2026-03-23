@@ -263,9 +263,6 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
-  }
   .text-right {
     text-align: right;
   }
@@ -276,14 +273,6 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
   .text-vh_gray_dark {
     color: var(--color-vh_gray_dark);
   }
@@ -293,12 +282,6 @@
   .opacity-30 {
     opacity: 30%;
   }
-  .sm\:text-6xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-6xl);
-      line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
-  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -306,6 +289,18 @@
   }
 }
 @layer components {
+  h2 {
+    padding-block: calc(var(--spacing) * 6);
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-vh_gray_light);
+    @media (width >= 40rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
   .faqDetail {
     background-color: var(--color-vh_zinc);
     padding-bottom: calc(var(--spacing) * 5);
@@ -344,7 +339,7 @@ body {
 @media (orientation: landscape) {
   .keyword {
     font-size: clamp(1rem, calc(1rem + 15vh), 16rem);
-    line-height: clamp(0.5rem, calc(1rem + 22vh), 12rem);
+    line-height: clamp(0.5rem, calc(1rem + 12vh), 12rem);
   }
 }
 @media (orientation: portrait) {
