@@ -179,16 +179,26 @@
   }
 }
 @layer utilities {
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border-width: 0;
+  .fixed {
+    position: fixed;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .top-6 {
+    top: calc(var(--spacing) * 6);
+  }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
+  .right-5 {
+    right: calc(var(--spacing) * 5);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-20 {
+    left: calc(var(--spacing) * 20);
   }
   .m-0 {
     margin: calc(var(--spacing) * 0);
@@ -196,26 +206,26 @@
   .-me-2 {
     margin-inline-end: calc(var(--spacing) * -2);
   }
+  .me-2 {
+    margin-inline-end: calc(var(--spacing) * 2);
+  }
+  .me-12 {
+    margin-inline-end: calc(var(--spacing) * 12);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
   }
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
-  }
-  .mb-48 {
-    margin-bottom: calc(var(--spacing) * 48);
-  }
-  .mb-96 {
-    margin-bottom: calc(var(--spacing) * 96);
+  .mt-25 {
+    margin-top: calc(var(--spacing) * 25);
   }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
-  }
-  .hidden {
-    display: none;
   }
   .table {
     display: table;
@@ -296,14 +306,8 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
-  .px-6 {
-    padding-inline: calc(var(--spacing) * 6);
-  }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
-  }
-  .pb-96 {
-    padding-bottom: calc(var(--spacing) * 96);
   }
   .text-right {
     text-align: right;
@@ -318,10 +322,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -343,13 +343,6 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .hover\:visible {
-    &:hover {
-      @media (hover: hover) {
-        visibility: visible;
-      }
-    }
-  }
   .sm\:text-6xl {
     @media (width >= 40rem) {
       font-size: var(--text-6xl);
@@ -359,12 +352,6 @@
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .md\:text-6xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-6xl);
-      line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
 }
@@ -407,7 +394,7 @@ body {
 @media (orientation: landscape) {
   .keyword {
     font-size: clamp(1rem, calc(1rem + 15vh), 16rem);
-    line-height: clamp(0.5rem, calc(1rem + 12vh), 8rem);
+    line-height: clamp(0.5rem, calc(1rem + 22vh), 12rem);
   }
 }
 @media (orientation: portrait) {
