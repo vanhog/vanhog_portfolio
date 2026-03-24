@@ -33,6 +33,10 @@
   .faqAnswere {
     @apply px-12 pt-4 text-xl font-light text-vh_gray_dark;
   }
+
+  .project-title {
+    @apply bg-vh_gray_dark rounded-xs text-vh_zinc p-2 font-light text-3xl;
+  }
 }
 
 .keyword {
