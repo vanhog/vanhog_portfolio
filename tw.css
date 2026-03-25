@@ -344,7 +344,7 @@ body {
 @media (orientation: landscape) {
   .keyword {
     font-size: clamp(1rem, calc(1rem + 15vh), 16rem);
-    line-height: clamp(0.5rem, calc(1rem + 22vh), 12rem);
+    line-height: clamp(0.5rem, calc(1rem + 12vh), 12rem);
   }
 }
 @media (orientation: portrait) {
