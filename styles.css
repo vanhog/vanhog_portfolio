@@ -29,6 +29,10 @@
   .faqAnswere {
     @apply px-12 pt-4 text-xl font-light text-vh_gray_dark;
   }
+
+  .menuItem {
+    @apply p-2 w-50 bg-vh_gray_dark text-vh_zinc text-2xl opacity-100 rounded-none border-b border-vh_zinc;
+  }
 }
 
 .keyword {
