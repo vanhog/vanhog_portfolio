@@ -199,6 +199,12 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .mx-1 {
+    margin-inline: calc(var(--spacing) * 1);
+  }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
+  }
   .me-12 {
     margin-inline-end: calc(var(--spacing) * 12);
   }
@@ -313,6 +319,15 @@
   }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .ps-10 {
+    padding-inline-start: calc(var(--spacing) * 10);
+  }
+  .pe-25 {
+    padding-inline-end: calc(var(--spacing) * 25);
   }
   .text-right {
     text-align: right;
