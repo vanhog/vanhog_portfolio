@@ -1,3 +1,7 @@
+import { Projects } from './projects.js';
+console.log(typeof document.getElementById('left-side'));
+console.log(Projects.render(document.getElementById('left-side')));
+
 const menu = document.getElementById('menu');
 const ham = document.getElementById('hamIcon');
 const hamFrame = document.getElementById('hm');
