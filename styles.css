@@ -36,9 +36,11 @@
 
   .project-title {
     @apply bg-vh_gray_dark rounded-xs text-vh_zinc p-2 font-light text-3xl;
+    .menuItem {
+      @apply p-2 w-50 bg-vh_gray_dark text-vh_zinc text-2xl opacity-100 rounded-none border-b border-vh_zinc;
+    }
   }
 }
-
 .keyword {
   font-size: 1rem;
   color: var(--color-vh_zinc);
