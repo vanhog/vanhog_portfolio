@@ -8,6 +8,7 @@
   --color-vh_zinc: oklch(92% 0.004 286.32);
   --color-vh_gray_light: oklch(44.6% 0.03 256.802);
   --color-vh_gray_dark: oklch(27.8% 0.033 256.848);
+  --color-vh_red: #aa0000;
 }
 
 /* @layer components {
