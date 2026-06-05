@@ -3,6 +3,8 @@ let projectList = [];
 
 function showCurrent(indx) {
   console.log(indx);
+  const rightText = document.getElementById('project-text');
+  rightText.innerText = projects.projects[indx].description;
 }
 async function loadProjects() {
   const res = await fetch(new URL('../assets/projects.json', import.meta.url));
