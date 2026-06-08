@@ -2,11 +2,11 @@
     "projects":
      [
         { "title": "Water Levels", "img": "gauge_screenshot.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"},
-        { "title": "Frontend Mentor", "img": "frontend.png", "description": "aöldsöalsjf öalsf  ölasdf ölk "},
-        { "title": "Shapely Replica", "img": "shapely_replica.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"},
-        { "title": "Tip Calculator", "img": "shapely_replica.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"},
+        { "title": "Frontend Mentor", "img": "frontend_mentor_screenshot.png", "description": "aöldsöalsjf öalsf  ölasdf ölk "},
+        { "title": "Shapely Replica", "img": "shapely_screenshot.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"},
+        { "title": "Tip Calculator", "img": "tip_calculator_screenshot.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"},
         { "title": "Tolles Projekt", "img": "shapely_replica.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"},
-        { "title": "Science Poster", "img": "shapely_replica.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"},
+        { "title": "Science Poster", "img": "science_poster_screenshot.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"},
         { "title": "Linux Days", "img": "shapely_replica.png", "description": "aöldsf öakdkddkdk kdkdkddkdk dkkddkkdk"}
     ]
 }
