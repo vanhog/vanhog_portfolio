@@ -8,7 +8,7 @@ function showCurrent(indx) {
 
   const rightImg = document.getElementById('project-image');
   rightImg.innerHTML =
-    '<img src=./assets/' + projects.projects[indx].img + ' />';
+    '<img class="w-130" src=./assets/' + projects.projects[indx].img + ' />';
 }
 async function loadProjects() {
   const res = await fetch(new URL('../assets/projects.json', import.meta.url));

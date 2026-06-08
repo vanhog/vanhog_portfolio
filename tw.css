@@ -8,10 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-gray-100: oklch(96.7% 0.003 264.542);
-    --color-gray-400: oklch(70.7% 0.022 261.325);
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
@@ -234,6 +231,9 @@
   .w-50 {
     width: calc(var(--spacing) * 50);
   }
+  .w-130 {
+    width: calc(var(--spacing) * 130);
+  }
   .min-w-93\.75 {
     min-width: calc(var(--spacing) * 93.75);
   }
@@ -276,20 +276,11 @@
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
-  .gap-y-8 {
-    row-gap: calc(var(--spacing) * 8);
+  .gap-y-4 {
+    row-gap: calc(var(--spacing) * 4);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
-  }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
-  .bg-blue-200 {
-    background-color: var(--color-blue-200);
-  }
-  .bg-gray-400 {
-    background-color: var(--color-gray-400);
   }
   .bg-vh_old_white {
     background-color: var(--color-vh_old_white);
@@ -422,13 +413,12 @@
   }
   .project-title {
     border-radius: var(--radius-xs);
-    background-color: var(--color-vh_gray_dark);
     padding: calc(var(--spacing) * 2);
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
-    color: var(--color-vh_zinc);
+    color: var(--color-vh_gray_dark);
   }
   .menuItem {
     width: calc(var(--spacing) * 50);
