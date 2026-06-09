@@ -1,5 +1,6 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -18,15 +19,19 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-light: 300;
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-xs: 0.125rem;
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-source: 'Source Sans 3', sans-serif;
+    --font-inspiration: 'Inspiration', cursive;
     --color-vh_old_white: #f5f0ea;
     --color-vh_zinc: oklch(92% 0.004 286.32);
     --color-vh_gray_light: oklch(44.6% 0.03 256.802);
@@ -419,6 +424,33 @@
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
     color: var(--color-vh_gray_dark);
+    &:hover {
+      @media (hover: hover) {
+        padding-inline-start: calc(var(--spacing) * 10);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        font-family: var(--font-inspiration);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        font-size: var(--text-5xl);
+        line-height: var(--tw-leading, var(--text-5xl--line-height));
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-vh_red);
+      }
+    }
   }
   .menuItem {
     width: calc(var(--spacing) * 50);

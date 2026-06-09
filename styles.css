@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 @import 'tailwindcss';
 
 /* 'vh' van hog -> custom */
 @theme {
   --font-source: 'Source Sans 3', sans-serif;
+  --font-inspiration: 'Inspiration', cursive;
   --color-vh_old_white: #f5f0ea;
   --color-vh_zinc: oklch(92% 0.004 286.32);
   --color-vh_gray_light: oklch(44.6% 0.03 256.802);
@@ -36,7 +38,7 @@
   }
 
   .project-title {
-    @apply rounded-xs text-vh_gray_dark p-2 font-light text-3xl;
+    @apply rounded-xs text-vh_gray_dark p-2 font-light text-3xl hover:text-vh_red hover:font-inspiration hover:text-5xl hover:font-medium hover:ps-10;
   }
 
   .menuItem {

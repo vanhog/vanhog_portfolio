@@ -24,12 +24,12 @@ export const Projects = {
       p.setAttribute('id', String(elem));
       p.addEventListener('mouseover', (event) => {
         // highlight the mouseover target
-        event.target.style.fontWeight = '500';
+        //event.target.style.fontWeight = '500';
         showCurrent(elem);
       });
       p.addEventListener('mouseout', (event) => {
         // highlight the mouseover target
-        event.target.style.fontWeight = 'normal';
+        //event.target.style.fontWeight = 'normal';
       });
       projectList.push(p);
     }
